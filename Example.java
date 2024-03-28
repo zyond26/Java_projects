@@ -5,6 +5,7 @@ public class Example extends Frame {
   public static void main(String arg[]) { 
     new Example("Event Handling"); 
   } 
+
   Example(String m) { 
     super("Example: "+m); 
     setSize(340,280) ; 
@@ -14,12 +15,14 @@ public class Example extends Frame {
     p.add("West", new Checkbox("Save config")); 
     p.add("East", new Checkbox("Ignore colors"));
     
+
     Panel subPanel = new Panel();
     subPanel.setLayout(new GridLayout(4, 4));
     
     for(int i=0;i<10;i++){
         subPanel.add("South", new Button("" + i));
     }
+    
     subPanel.add(new Button("Clear")); 
     subPanel.add("South", new Button("+"));
     subPanel.add("South", new Button("-"));
