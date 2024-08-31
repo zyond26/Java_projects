@@ -1,8 +1,9 @@
+
 import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
-public class BTKT_so_02 {
+public class Guest_number {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();

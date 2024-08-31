@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class BTKT_so_01 {
+public class Nhap_so {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         

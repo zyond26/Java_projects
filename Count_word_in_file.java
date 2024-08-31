@@ -8,7 +8,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class Bai_02 {
+public class Count_word_in_file {
     public static void main(String[] args) {
         String fileName = "btap.txt"; // Đặt đường dẫn của tệp văn bản của bạn ở đây
         
