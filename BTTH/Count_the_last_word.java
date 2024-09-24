@@ -47,3 +47,25 @@ public class Count_the_last_word {
     }
 }
 
+
+
+
+
+
+//-----------------------------cachs 2 --------------------------
+
+/*class Solution {
+    public int lengthOfLastWord(String s) {
+        // Trim any trailing spaces
+        s = s.trim();
+        // Find the last space in the string after trimming
+        int lastSpaceIndex = s.lastIndexOf(' ');
+        // The length of the last word is the difference between the string's length
+        // and the index of the last space
+        return s.length() - lastSpaceIndex - 1;
+    }
+}
+*/
+
+
+
