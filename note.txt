@@ -1,0 +1,9 @@
+  
+  
+  -------------- Hiển thị tiếng vieetjtttt---------------------------------
+  
+  public static void main(String[] args) throws UnsupportedEncodingException,IOException,InterruptedException
+    {
+        ProcessBuilder pb = new ProcessBuilder("cmd.exe", "/c", "chcp 65001").inheritIO();
+        pb.start().waitFor();
+        System.setOut(new PrintStream(System.out, true, "UTF-8"));

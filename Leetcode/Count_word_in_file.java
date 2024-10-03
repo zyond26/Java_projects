@@ -1,4 +1,6 @@
+package Leetcode;
 // Bài 2: Cho 1 file text có nội dung như sau, (các em tự tạo file text để làm).
+
 // Chao mung cac ban
 // Den voi truong
 // CMC
@@ -11,7 +13,7 @@ import java.io.IOException;
 public class Count_word_in_file {
     public static void main(String[] args) {
         String fileName = "btap.txt"; // Đặt đường dẫn của tệp văn bản của bạn ở đây
-        
+
         try {
             int wordCount = countWords(fileName);
             System.out.println("So luong tu trong tep la: " + wordCount);

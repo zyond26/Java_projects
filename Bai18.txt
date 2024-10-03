@@ -1,0 +1,51 @@
+Bài tập 18.
+Thiết kế lớp Logger chỉ có duy nhất một đối tượng, vì Logger tồn tại trong toàn bộ ứng dụng,
+ và mọi việc ghi log đều được thực hiện trên cùng một đối tượng.
+
+Giải:
+public class Logger {
+    private static final Logger instance = new Logger();
+
+    private Logger() {
+        // Khởi tạo logger
+    }
+
+    public static Logger getInstance() {
+        return instance;
+    }
+
+    public void log(String message) {
+        // Ghi log vào tệp hoặc in ra màn hình
+        System.out.println("LOG: " + message);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Lấy thể hiện duy nhất của lớp Logger
+        Logger ob1 = Logger.getInstance();
+
+        // Ghi log
+        ob1.log("Starting application...");
+
+        // Thử ghi log bằng một thể hiện khác
+        Logger ob2= Logger.getInstance();
+        ob2.log("Logging from another instance...");
+
+        // ob1 và ob2 đều là cùng một thể hiện của lớp Logger
+        System.out.println(ob1 == ob2); // Kết quả: true
+    }
+}
+
+Nhận xét:
+
+Logger được sử dụng để ghi lại các sự kiện quan trọng và thông tin hệ thống như:
++Đăng nhập và đăng xuất của người dùng: 
+Khi một người dùng đăng nhập hoặc đăng xuất khỏi hệ thống, Logger được sử dụng để ghi lại thông tin 
+như tên người dùng, thời gian đăng nhập và đăng xuất.
++Thao tác: 
+Khi người dùng thực hiện các thao tác tài chính... như chuyển tiền, rút tiền, nạp tiền, Logger sẽ ghi 
+lại thông tin về các giao dịch này như số tiền, tài khoản nguồn và tài khoản đích, thời gian giao dịch...
++Lỗi và thông báo hệ thống: 
+Khi hệ thống gặp phải lỗi hoặc cần thông báo đến người dùng về các sự kiện quan trọng, Logger sẽ ghi
+ lại thông tin về các lỗi, thông báo và thời gian xảy ra.
