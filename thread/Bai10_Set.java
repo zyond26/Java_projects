@@ -1,3 +1,4 @@
+package thread;
 /*Bài tập 10.
 Hãy viết một chương trình Java sử dụng Set để quản lý một danh sách các sinh viên duy nhất. 
 Thực hiện các bước sau:

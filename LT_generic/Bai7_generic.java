@@ -19,6 +19,7 @@ interface SoSanh<T> {
 class HinhChuNhat {
     private double chieudai;
     private double chieurong;
+
     public HinhChuNhat(double chieudai, double chieurong) {
         this.chieudai = chieudai;
         this.chieurong = chieurong;

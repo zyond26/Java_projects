@@ -34,6 +34,7 @@ class CapGiaTri<T, U> {
         this.giaTri2 = giaTri2;
     }
 }
+
 public class Bai5_generic {
     public static void main(String[] args) {
         CapGiaTri<String, Integer> cap = new CapGiaTri<>();

@@ -10,21 +10,21 @@ Một mảng số nguyên.
 Một mảng chuỗi.
  */
 
- class HoTro{
-    public static <T> void inMang (T[] mang){
-        for(T phanTu : mang){
+class HoTro {
+    public static <T> void inMang(T[] mang) {
+        for (T phanTu : mang) {
             System.out.print(phanTu + " ");
         }
         System.out.println();
     }
- }
+}
 
 public class Bai6_generic {
     public static void main(String[] args) {
-        Integer[] mangsoNguyen = {1,2,3,4,5,6};
-        String[] mangChuoi = {"Xin","Chao"};
+        Integer[] mangsoNguyen = { 1, 2, 3, 4, 5, 6 };
+        String[] mangChuoi = { "Xin", "Chao" };
         HoTro.inMang(mangsoNguyen);
         HoTro.inMang(mangChuoi);
     }
-    
+
 }

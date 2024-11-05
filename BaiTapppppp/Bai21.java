@@ -1,3 +1,4 @@
+package BaiTapppppp;
 /*
  * Bài tập 21.
  * Tạo một lớp Singleton đơn giản có tên là SimpleSingleton.
